@@ -25,6 +25,7 @@ require("awful.hotkeys_popup.keys")
 local brightness_widget = require("awesome-wm-widgets.brightness-widget.brightness")
 local spotify_widget = require("awesome-wm-widgets.spotify-widget.spotify")
 local volumearc_widget = require("awesome-wm-widgets.volumearc-widget.volumearc")
+-- local batteryarc_widget = require("awesome-wm-widgets.batteryarc-widget.batteryarc")
 
 -- Run garbage collector regularly to prevent memory leaks
 gears.timer {
@@ -251,6 +252,11 @@ end
             wibox.widget.systray(),
             mytextclock,
             s.mylayoutbox,
+        -- batteryarc_widget({
+            -- layout = wibox.layout.fixed.horizontal,
+            -- show_current_level = true,
+            -- arc_thickness = 2,
+        -- }),
         },
     }
 end)
