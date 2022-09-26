@@ -348,6 +348,11 @@ globalkeys = gears.table.join(
     awful.key({ modkey,           }, "d", function() awful.spawn("passmenu") end,
               {description = "Launch passdmenu", group = "hotkeys"}),
 
+    -- precios negocio
+
+    awful.key({ modkey,           }, "t", function() awful.util.spawn_with_shell("python /home/holymc2/code/negocio-celulares/precios.py | rofi -dmenu -i") end,
+              {description = "Precios refacciones", group = "hotkeys"}),
+
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
               {description = "open a terminal", group = "launcher"}),
