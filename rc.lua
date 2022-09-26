@@ -350,7 +350,7 @@ globalkeys = gears.table.join(
 
     -- precios negocio
 
-    awful.key({ modkey,           }, "t", function() awful.util.spawn_with_shell("python /home/holymc2/code/negocio-celulares/precios.py | rofi -dmenu -i") end,
+    awful.key({ modkey,           }, "t", function() awful.util.spawn_with_shell("python /home/holymc2/code/rofi-precios-refacciones/precios.py | rofi -dmenu -i") end,
               {description = "Precios refacciones", group = "hotkeys"}),
 
     -- Standard program
