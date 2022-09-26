@@ -26,7 +26,6 @@ local brightness_widget = require("awesome-wm-widgets.brightness-widget.brightne
 local spotify_widget = require("awesome-wm-widgets.spotify-widget.spotify")
 local volumearc_widget = require("awesome-wm-widgets.volumearc-widget.volumearc")
 -- local batteryarc_widget = require("awesome-wm-widgets.batteryarc-widget.batteryarc")
--- test pal github
 
 -- Run garbage collector regularly to prevent memory leaks
 gears.timer {
